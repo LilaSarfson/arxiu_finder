@@ -8,7 +8,6 @@ export function FilterBy(
     const datosFiltrados = originalData.filter((e) => e[elemento] === parameter);
     setSomething(datosFiltrados);
     setsharedData(true)
-    //Hay que gestionar el "todo" en el filtro
   }
   
   export function FilterByName(originalData, parameter, setSomething, setsharedData) {

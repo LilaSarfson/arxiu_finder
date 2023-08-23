@@ -54,12 +54,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className='h-screen m-auto flex flex-col gap-6 items-center'>
+      <div className='m-auto flex flex-col gap-6 items-center'>
         <section className=' w-full flex flex-col gap-4'>
           <div className='w-4/6 m-auto flex flex-col gap-8'>
             <header className='w-full mt-8'>
               <HeaderPage
-              click={toggleDarkMode}
               />
             </header>
             <div className='flex flex-col justify-center bg-white p-4 rounded-md mb-6 w-full '>
@@ -75,7 +74,7 @@ export default function App() {
             </div>
           </div>
       </section>
-      <section className='flex flex-col justify-center gap-4 bg-white p-8 w-4/6 rounded-md'>
+      <section className='flex flex-col justify-center gap-4 bg-white p-4 w-4/6 rounded-md'>
         <CardHeader/>
         {sharedData ? (
           datosFiltrados.map((item, index) => (
