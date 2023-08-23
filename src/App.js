@@ -26,7 +26,7 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-  };
+  }; //Estoy hay que investigarlo
 
   const handleSelector = (e, elemento, setElemento) => {
     let targetValue = e.target.value
@@ -54,7 +54,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className='h-screen m-auto flex flex-col gap-6 items-center bg-fondo'>
+      <div className='h-screen m-auto flex flex-col gap-6 items-center'>
         <section className=' w-full flex flex-col gap-4'>
           <div className='w-4/6 m-auto flex flex-col gap-8'>
             <header className='w-full mt-8'>
