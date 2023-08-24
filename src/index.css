@@ -4,7 +4,6 @@
 
 html, body, #app, .App, #root, #app>div {
     height: 100vh;
-    background-color: rgb(242, 243, 247);
   }
 p, h3{
   font-family: 'Wix Madefor Text', sans-serif;

@@ -54,14 +54,14 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className='m-auto flex flex-col gap-6 items-center'>
+      <div className='m-auto flex flex-col gap-6 items-center bg-fondo dark:bg-dark_bg dark:text-white'>
         <section className=' w-full flex flex-col gap-4'>
           <div className='w-4/6 m-auto flex flex-col gap-8'>
             <header className='w-full mt-8'>
               <HeaderPage
               />
             </header>
-            <div className='flex flex-col justify-center bg-white p-4 rounded-md mb-6 w-full '>
+            <div className='flex flex-col justify-center bg-white p-4 rounded-md mb-6 w-full dark:bg-dark_secction'>
             <SelectByName value={street} change={handleChangeName} />
               <div className='flex flex-row gap-4 p-4 justify-center'>
               <SelectModal setElemento={setYear} value={year} seleccionador={yearsList} filtro={handleSelector} header={headerSelector[0]} />
@@ -74,7 +74,7 @@ export default function App() {
             </div>
           </div>
       </section>
-      <section className='flex flex-col justify-center gap-4 bg-white p-4 w-4/6 rounded-md'>
+      <section className='flex flex-col justify-center gap-4 bg-white p-4 w-4/6 rounded-md dark:bg-dark_secction'>
         <CardHeader/>
         {sharedData ? (
           datosFiltrados.map((item, index) => (

@@ -8,9 +8,9 @@ import React, { useState } from 'react';
       document.documentElement.classList.toggle('dark', !darkMode);
     };
   return (
-      <button
+      <button id='toggle'
         onClick={toggleDarkMode}
-        className={`p-2 rounded-full bg-${darkMode ? 'gray' : 'yellow'}-500`}>
+        className='p-4'>
         {/* Icono para el interruptor (puedes cambiarlo según tus necesidades) */}
         {darkMode ? '🌙' : '☀️'}
       </button>
