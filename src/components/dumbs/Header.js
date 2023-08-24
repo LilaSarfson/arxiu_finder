@@ -1,5 +1,5 @@
 import logo from '../../assets/logo.png'
-import DarkModeToggle from './DarkModeToggle'
+import DarkModeToggle from '../smarts/DarkModeToggle'
 export default function HeaderPage(props){
     return(
         <div className='flex flex-row w-full items-center gap-4 justify-start ml-6 h-4'>

@@ -1,4 +1,1 @@
 1. Manejar que cuando el input de los nombres se queda en blanco, qu'e pasa??
-4. Añadir otros enlaces de interés como: el nomenclator o la página del arxiu AMCB
-5. Hay que sacar la logica del toggleDark
-6. Hay que poner footer!!
