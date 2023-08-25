@@ -4,7 +4,7 @@ export default function Card (props){
     return(
         <div className="dark:bg-dark_card grid grid-cols-10 items-center gap-2 border border-2 border-black text-center p-4 shadow-md">
             <div className='flex flex-row gap-2 items-end col-span-7'>
-                <img onClick={handleMapLinkClick} src={localitation} className='w-1/12 cursor-pointer'/>
+                <img onClick={()=> {handleMapLinkClick(props.name)}} src={localitation} className='w-1/12 cursor-pointer'/>
                 <h3 className="text-xl ">{props.name}</h3>
             </div>
             <p className='col-span-1'>{props.distrito}</p>

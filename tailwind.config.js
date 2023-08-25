@@ -6,7 +6,9 @@ module.exports = {
   ],  theme: {
     extend: {
       colors: {
-        'fondo': 'rgb(242, 243, 247)',
+        'verde_oliva':'#81B29A',
+        'azul_clarito':'#A8DADC',
+        'fondo': '#e1e8ed',
         'dark_bg': '#121212',
         'dark_secction':'#1E1E1E',
         'dark_card':'#22303C',

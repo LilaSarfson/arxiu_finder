@@ -1,7 +1,7 @@
 export default function SelectModal(props) {
   return (
     <>
-  <div class="flex items-center border border-2 dark:border-white border-black p-4 rounded-lg t-bold ">
+  <div class="flex items-center border border-2 dark:border-dark_white border-black p-4 rounded-lg t-bold ">
   <select
     onChange={(e) => props.filtro (e, props.header, props.setElemento)}
     id="lang"

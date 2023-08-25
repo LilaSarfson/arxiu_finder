@@ -1,1 +1,0 @@
-1. Manejar que cuando el input de los nombres se queda en blanco, qu'e pasa??

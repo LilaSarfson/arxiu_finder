@@ -22,4 +22,5 @@ export function FilterBy(
     const encodedStreetName = encodeURIComponent(street);
     const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodedStreetName}`;
     window.open(mapUrl, '_blank');
+    console.log('entro en el mpaa')
   };
