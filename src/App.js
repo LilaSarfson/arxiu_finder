@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className=' m-auto flex flex-col gap-6 items-center bg-fondo dark:bg-dark_bg dark:text-dark_white'>
+      <div className='min-h-screen relative m-auto flex flex-col gap-6 items-center bg-fondo dark:bg-dark_bg dark:text-dark_white'>
         <section className=' w-full flex flex-col gap-4'>
           <div className='w-4/6 m-auto flex flex-col gap-8'>
             <header className='w-full mt-8'>
