@@ -7,6 +7,7 @@ import HeaderPage from './components/dumbs/Header';
 import CardHeader from './components/dumbs/CardHeader';
 import Footer from './components/dumbs/Footer';
 import Button from './components/dumbs/Button'
+import HandleError from './components/dumbs/HandleError';
 import { useState } from "react";
 import { FilterBy, FilterByName} from "../src/utils/utils";
 export default function App() {
@@ -22,7 +23,8 @@ export default function App() {
   const [year, setYear] = useState(headerSelector[0]);
   const [street, setName] = useState("");
   const [numCards, setnumCards] = useState (4); 
-
+  const [error, setError] = useState(false)
+  
   const handleSelector = (e, elemento, setElemento) => {
     let targetValue = e.target.value
     setElemento(targetValue)
@@ -95,10 +97,16 @@ export default function App() {
           )))
         }
         <Button 
-        clickFunction= {()=> {numCards<originalData.length ? setnumCards(numCards + 4): console.log('ya no hay mas') }}
+        clickFunction= {()=> {numCards<originalData.length ? setnumCards(numCards + 4): setError(true) }}
         grande={false}
         title='+'/>
       </section>
+      { error ?
+             <HandleError
+             error='There are not more entries'/>
+             :
+             ''
+      } 
       <Footer/>
       </div>
     </div>
