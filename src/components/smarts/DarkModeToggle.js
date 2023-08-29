@@ -11,10 +11,9 @@ import moon from '../../assets/moon.png'
     };
   return (
       <button id='toggle'
-        onClick={toggleDarkMode}
-        className='p-4'>
+        onClick={toggleDarkMode}>
         {darkMode ? 
-        <img className='w-7' src={sun}/> : <img className='w-7' src={moon}/>}
+        <img className='w-5' src={sun}/> : <img className='w-5' src={moon}/>}
       </button>
 
   );

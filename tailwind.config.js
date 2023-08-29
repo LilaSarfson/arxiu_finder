@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'rojito_clarito':'#ff5353',
         'verde_oliva':'#81B29A',
+        'azul_logo': '#3AC7B4',
         'azul_clarito':'#A8DADC',
         'fondo': '#e1e8ed',
         'dark_bg': '#121212',
