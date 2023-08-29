@@ -77,6 +77,7 @@ export default function App() {
                   <SelectModal setElemento={setYear} value={year} seleccionador={yearsList} filtro={handleSelector} header={headerSelector[0]} />
                   <SelectModal setElemento={setDis} value={dis} seleccionador={districteList} filtro={handleSelector} header={headerSelector[1]}/>  
                   <Button
+                  grande={true}
                   title= 'clear all'
                   clickFunction={clearAll}/>
              </div>

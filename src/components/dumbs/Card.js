@@ -2,7 +2,7 @@ import localitation from '../../assets/localizacion.png'
 import {handleMapLinkClick} from '../../utils/utils'
 export default function Card (props){
     return(
-        <div className="dark:bg-dark_card grid grid-cols-10 items-center gap-2 border-2 border-black text-center p-4 shadow-md">
+        <div className="dark:bg-dark_card wix_font grid grid-cols-10 items-center gap-2 border-2 border-black text-center p-4 shadow-md">
             <div className='flex flex-row gap-2 items-end col-span-7'>
                 <img onClick={()=> {handleMapLinkClick(props.name)}} src={localitation} className='w-1/12 cursor-pointer'/>
                 <h3 className="text-xl ">{props.name}</h3>

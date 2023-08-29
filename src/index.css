@@ -5,13 +5,13 @@
 html, body, #app, .App, #root, #app>div {
     height: 100vh;
   }
-p, h3{
-  font-family: 'Wix Madefor Text', sans-serif;
-}
-h1{
+  h1{
   font-family: 'Bebas Neue', sans-serif;
 }
 
 .bebas_font {
   font-family: 'Bebas Neue', sans-serif;
+}
+.wix_font{
+  font-family: 'Wix Madefor Text', sans-serif;
 }

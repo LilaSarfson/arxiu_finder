@@ -1,0 +1,2 @@
+Si le dos dos veces a alguno de los dos selectores se activa el filteredData y me hace el filtro sobre esa misma búsqueda. Esto es útil cuando el filtro no es el mismo. Es decir, si yo cambio de distrito, quiero que me enseñe ese distrito no que me filtre ese distrito sobre el anterior. Arreglar!!
+Lo que habr'ia que mirar es, como saber si se ha usado el filtro dos veces seguidas y si es as'i poner el sharedData(false)
