@@ -8,7 +8,7 @@ import CardHeader from './components/dumbs/CardHeader';
 import Footer from './components/dumbs/Footer';
 import Button from './components/dumbs/Button'
 import HandleError from './components/dumbs/HandleError';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FilterBy, FilterByName} from "../src/utils/utils";
 export default function App() {
   const [originalData, setData] = useState(dataStreet);
@@ -25,6 +25,18 @@ export default function App() {
   const [numCards, setnumCards] = useState (4); 
   const [error, setError] = useState(false)
   
+  useEffect(() => {
+    if (error) {
+      const timeout = setTimeout(() => {
+        setError(false);
+      }, 4000); 
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  }, [error]);
+
+
   const handleSelector = (e, elemento, setElemento) => {
     let targetValue = e.target.value
     setElemento(targetValue)
@@ -101,12 +113,9 @@ export default function App() {
         grande={false}
         title='+'/>
       </section>
-      { error ?
-             <HandleError
-             error='There are not more entries'/>
-             :
-             ''
-      } 
+      <HandleError
+      boleanVariable= {error}
+      error='There are not more entries'/>
       <Footer/>
       </div>
     </div>

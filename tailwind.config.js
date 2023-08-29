@@ -6,6 +6,7 @@ module.exports = {
   ],  theme: {
     extend: {
       colors: {
+        'rojito_clarito':'#ff5353',
         'verde_oliva':'#81B29A',
         'azul_clarito':'#A8DADC',
         'fondo': '#e1e8ed',
